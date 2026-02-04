@@ -71,13 +71,23 @@
     margin-top: 24px;
     background: hsla(180,20%,20%, 0.2);
     transition: background 0.15s linear;
+    .dark & {
+      background: hsla(180,20%,80%, 0.2);
+    }
   }
 
   &:hover::before {
     background: hsla(180,20%,20%, 0.7);
+    .dark & {
+      background: hsla(180,20%,80%, 0.7);
+    }
   }
-
-}
-.flickity-page-dots .dot.is-selected::before {
-  background: hsla(180,20%,20%, 0.5);
+  &.is-selected {
+    &::before {
+      background: hsla(180,20%,20%, 0.7);
+      .dark & {
+        background: hsla(180,20%,80%, 0.7);
+      }
+    }
+  }
 }

@@ -62,7 +62,12 @@ footer
         a(href="https://www.kryptogo.com", target="_blank")
           span.highlighter KryptoGO
         | , an blockchain browser.
-
+    .row
+      p
+        em.title
+          | Previously
+        a(href="https://www.kryptogo.com", target="_blank")
+          span.highlighter KryptoGO
     .row
       p
         a(href="https://twitter.com/junnnnj", title="@junnnnj on Twitter", target="_blank")
@@ -74,8 +79,7 @@ footer
 
 <style lang="scss" scoped>
 
-@import
-'@/assets/scss/_initials/_variables';
+@import '@/assets/scss/_variables';
 
 footer {
   height: 100%;
@@ -161,7 +165,7 @@ footer .row p:nth-child(1) {
   }
   &.t02::after {
     width: 14em;
-    content: '…buzzword du jour. What it means is, I take ownership of the entire end to end design process.';
+    content: '…This is a popular term these days. It means that I will be responsible for the entire end-to-end design process.';
   }
   &.t03::after {
     width: 15em;

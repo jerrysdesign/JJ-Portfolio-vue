@@ -57,18 +57,24 @@ p a:focus {
 	transform: scaleX(0);
 	transform-origin: 0 50%;
 	transition: transform 0.25s cubic-bezier(.25, .46, .45, .94);
+	& p {
+		top: 90%;
+	}
 }
 a:hover .highlighter::after {
 	transform: scaleX(1);
 }
 
-p .highlighter::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background-color: hsla(240,20%,80%, 0.5);
-  height: 2px;
-  width: 100%;
+.highlighter::before {
+	& p {
+	  content: "";
+	  display: block;
+	  position: absolute;
+	  background-color: hsla(240,20%,80%, 0.5);
+	  height: 2px;
+	  width: 100%;
+
+	}
 }
 p .highlighter::after,
 p .highlighter::before {

@@ -44,8 +44,7 @@ export default {
 
 <style lang="scss" scoped>
 
-@import
-'@/assets/scss/_initials/_variables';
+@import '@/assets/scss/_variables';
 
 nav {
   position: fixed;

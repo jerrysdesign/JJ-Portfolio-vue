@@ -1,5 +1,5 @@
 <template lang="pug">
-  header
+header
   .h-top
     slot(name="headerRole")
     slot(name="headerScope")
@@ -16,8 +16,7 @@
 </template>
 
 <style lang="scss" scoped>
-@import
-'../scss/variables';
+@import '@/assets/scss/_variables';
 header {
 	width: 100%; height: 100%;
 	margin-bottom: 10vw;
@@ -99,7 +98,7 @@ h3 {
 	aside {
     width: 90%;
     padding-left: 0;
-  	margin-right: 0;
+    margin-right: 0;
     margin-left: 10%;
 	}
 	h3 {
@@ -120,7 +119,7 @@ h3 {
   aside {
     width: 95%;
     padding-left: 0;
-  	margin-right: 0;
+    margin-right: 0;
     margin-left: 5%;
 	}
 }

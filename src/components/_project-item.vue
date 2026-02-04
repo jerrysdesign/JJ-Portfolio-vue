@@ -69,7 +69,7 @@ export default {
 <style lang="scss" scoped>
 
 @import
-'@/assets/scss/_initials/_variables';
+'@/assets/scss/_variables';
 
 .h-right {
   background-image: linear-gradient(to top, #FDCAF1 0%, #E6DEE9 100%);
