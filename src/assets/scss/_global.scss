@@ -64,7 +64,11 @@ p a:focus {
 a:hover .highlighter::after {
 	transform: scaleX(1);
 }
-
+.buttons {
+	margin-top: 2vh;
+	display: flex;
+	justify-content: flex-start;
+}
 .highlighter::before {
 	& p {
 	  content: "";

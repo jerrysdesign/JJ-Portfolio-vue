@@ -7,6 +7,9 @@ $dark-prime:  hsl(180,5%,90%);
 $dark-second: hsl(180,5%,65%);
 $dark-link:   hsl(198,100%,50%);
 
+$text-prime-dark: $dark-prime;
+$text-third-dark: $dark-second;
+
 $font-stack: 'Helvetica Neue', Helvetica, sans-serif;
 $body:       'Replica-Regular', $font-stack;
 $header:     'Replica-Bold', $font-stack;
