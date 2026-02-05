@@ -32,13 +32,15 @@ footer
       p
         em.title
           | About
+        | My name is
+        = ' '
         span.tooltip.t00 JJ Hung
         = ' '
-        | is a 
+        | . I am a
+        = ' '
+        span.tooltip.t02 Product Designer
         = ' '
         span.tooltip.t01 multidisciplinary
-        = ' '
-        span.tooltip.t02 product designer
         = ' '
         | helping startups and brands in 
         = ' '
@@ -54,27 +56,31 @@ footer
           | Get in touch
         a(href="mailto:jerry7722@hotmail.com", title="JJ's mailbox")
           span.highlighter jerry7722@hotmail.com
-    .row
+    .row.profile
       p
         em.title
-          | Currently
-        | Product Designer at 
-        a(href="https://www.kryptogo.com", target="_blank")
-          span.highlighter KryptoGO
-        | , an blockchain browser.
-    .row
+          | Work
+        | I have over ten years of design experience with a solid foundation in graphic design, while also taking on the role of a frontend engineer. I am familiar with the design and development workflows and management, allowing me to provide the best and most suitable design solutions considering the overall team status.
       p
         em.title
-          | Previously
-        a(href="https://www.kryptogo.com", target="_blank")
-          span.highlighter KryptoGO
-    .row
+          | Skills
+        | Possess strong abstract, logical, and analytical thinking skills. Specialized in translating visual elements and behavioral interactions into systematic design specifications.
       p
-        a(href="https://twitter.com/junnnnj", title="@junnnnj on Twitter", target="_blank")
-          span.highlighter Twitter
-        =' '
-        a(href="https://github.com/jerrysdesign", title="JJ's GitHub", target="_blank")
-          span.highlighter GitHub
+        em.title
+          | Differentiation
+        | I am actively looking for opportunities to stand on the world stage, dedicated to truly touching users' hearts through experience and expertise.
+      p
+        em.title Interests
+        | I compose electronic music, skateboard, play drums, enjoy spatial design, and have a passion for street fashion and "creating things".
+      p
+        em.title Philosophy
+        | I advocate for the Agile spirit, validating everything through User Stories.
+      p
+        em.title Teamwork
+        | I’m a team player; my best work was done together with great people and companies.
+      p
+        em.title Management Philosophy
+        | I have experience leading design and development teams, but I prefer a culture that prioritizes shared interests over reliance on management. I believe successful products stem from a spirit of innovation, a meticulous attitude, and constant refinement.
 </template>
 
 <style lang="scss" scoped>
@@ -99,10 +105,19 @@ svg {
 .row {
   display: flex;
   justify-content: flex-start;
+  &.profile {
+    p + p {
+      margin-top: 1rem;
+    }
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
 }
 p {
   font-family: $mono;
   font-size: 1rem;
+  line-height: 1.4;
   margin-bottom: 2rem;
   min-width: 200px;
   max-width: 540px;
@@ -173,7 +188,7 @@ footer .row p:nth-child(1) {
   }
   &.t04::after {
     width: 9em;
-    content: 'HTML/CSS/JS, React, Vue, Framer';
+    content: 'HTML/CSS/JS, React, Vue, SASS';
   }
   &:hover {
     color: hsl(234,10%,60%);
