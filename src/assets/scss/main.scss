@@ -1,6 +1,6 @@
-@import '_variables';
-@import '_global';
-@import '_typography';
-@import '_cards';
-@import '_flickity';
-@import '_media';
+@use '_variables' as *;
+@use '_global';
+@use '_typography';
+@use '_cards';
+@use '_flickity';
+@use '_media';

@@ -21,7 +21,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/_variables';
+@use '@/assets/scss/_variables' as *;
 
 a {
   display: inline-flex;

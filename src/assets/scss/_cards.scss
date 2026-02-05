@@ -1,4 +1,5 @@
 // CARDS
+@use '_variables' as *;
 
 .content {
   width: 100%;
@@ -7,38 +8,50 @@
   align-items: flex-start;
   padding: 5vh 0;
 }
+
 .content h3 {
   width: 15%;
   margin-left: 10%;
   min-width: 168px;
 }
+
 .content p {
   width: 40vw;
   max-width: 580px;
   min-width: 300px;
   margin-right: 5vw;
 }
+
 .content ul li h4 {
   color: $text-third;
   line-height: 25px;
 }
+
 .gallery {
-  width: 100%; height: 100%;
+  width: 100%;
+  height: 100%;
   z-index: 1;
 
   &::before {
-    position: absolute; top: 0; right: 0; bottom: 0; left: 0;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     content: '';
-    width: 75%; height: 100%;
+    width: 75%;
+    height: 100%;
     margin-left: 25%;
     z-index: -1;
   }
 }
+
 .static {
   position: relative;
   display: flex;
   justify-content: center;
 }
+
 .item {
   margin: 5vh 5vw 10vh 0;
   overflow: hidden;
@@ -49,18 +62,25 @@
     outline: none;
   }
 }
+
 .gallery .item:last-of-type {
   margin-right: 0;
 }
+
 .desktop {
-  width: 1024px; height: 768px;
+  width: 1024px;
+  height: 768px;
 }
+
 // .tablet {
 //   width: 960px; height: 720px;
 // }
 .portrait {
-  width: 576px; height: 768px;
+  width: 576px;
+  height: 768px;
 }
+
 .phone {
-  width: 375px; height: 768px;
+  width: 375px;
+  height: 768px;
 }

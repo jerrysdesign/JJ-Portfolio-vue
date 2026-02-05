@@ -1,26 +1,68 @@
 // GLOBAL
+@use '_variables' as *;
 
-html, body, div, section, main, nav, figure, p, a, h1, h2, h3, h4, h5, h6, ul, ol, li { box-sizing: border-box; margin: 0; }
-article, aside, details, figcaption, figure, footer, header, main, nav, section, video, summary { display: block; }
-a:focus {
-  outline: none;
+html,
+body,
+div,
+section,
+main,
+nav,
+figure,
+p,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+ol,
+li {
+	box-sizing: border-box;
+	margin: 0;
 }
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+video,
+summary {
+	display: block;
+}
+
+a:focus {
+	outline: none;
+}
+
 a:active,
 a:hover {
-  outline: 0;
+	outline: 0;
 }
+
 img {
-  border: 0;
-  width: 100%;
-  height: 100%;
+	border: 0;
+	width: 100%;
+	height: 100%;
 }
+
 svg:not(:root) {
-  overflow: hidden;
+	overflow: hidden;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 	padding: 0;
 }
+
 html {
 	font: 100%/1.4 $body;
 	font-weight: normal;
@@ -32,20 +74,23 @@ html {
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+
 body {
 	height: 100%;
 	cursor: default;
-	background-color: rgb(255,255,255);
+	background-color: rgb(255, 255, 255);
 }
 
 p a:hover,
 p a:focus {
 	color: $link;
 }
+
 .highlighter {
 	display: inline-block;
 	position: relative;
 }
+
 .highlighter::after {
 	content: "";
 	display: block;
@@ -57,29 +102,34 @@ p a:focus {
 	transform: scaleX(0);
 	transform-origin: 0 50%;
 	transition: transform 0.25s cubic-bezier(.25, .46, .45, .94);
+
 	& p {
 		top: 90%;
 	}
 }
+
 a:hover .highlighter::after {
 	transform: scaleX(1);
 }
+
 .buttons {
 	margin-top: 2vh;
 	display: flex;
 	justify-content: flex-start;
 }
+
 .highlighter::before {
 	& p {
-	  content: "";
-	  display: block;
-	  position: absolute;
-	  background-color: hsla(240,20%,80%, 0.5);
-	  height: 2px;
-	  width: 100%;
+		content: "";
+		display: block;
+		position: absolute;
+		background-color: hsla(240, 20%, 80%, 0.5);
+		height: 2px;
+		width: 100%;
 
 	}
 }
+
 p .highlighter::after,
 p .highlighter::before {
 	top: 90%;

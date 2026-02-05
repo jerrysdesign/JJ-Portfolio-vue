@@ -10,6 +10,8 @@ section.card
 </template>
 
 <style lang="scss" scoped>
+@use '@/assets/scss/_variables' as *;
+@use '@/assets/scss/_cases' as *;
 section {
   position: relative;
 	width: 100%;
@@ -71,7 +73,6 @@ section {
 .item {
   box-shadow: 0 15px 60px hsla(320,50%,40%, 0.35);
 }
-@import '@/assets/scss/_cases';
 @media (max-width: 680px) {
   .tablet-video, video {
     width: 512px; height: 384px;

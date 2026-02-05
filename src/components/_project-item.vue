@@ -68,8 +68,9 @@ export default {
 
 <style lang="scss" scoped>
 
-@import
-'@/assets/scss/_variables';
+@use '@/assets/scss/_variables' as *;
+@use '@/assets/scss/_cases' as *;
+
 
 .h-right {
   background-image: linear-gradient(to top, #FDCAF1 0%, #E6DEE9 100%);
@@ -94,9 +95,6 @@ export default {
 .item {
   box-shadow: 0 15px 60px hsla(320,50%,40%, 0.35);
 }
-
-@import
-'../scss/cases';
 
 @media (max-width: 680px) {
   .tablet-video, video {

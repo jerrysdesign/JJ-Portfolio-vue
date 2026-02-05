@@ -16,7 +16,7 @@ header
 </template>
 
 <style lang="scss" scoped>
-@import '@/assets/scss/_variables';
+@use '@/assets/scss/_variables' as *;
 header {
 	width: 100%; height: 100%;
 	margin-bottom: 10vw;
