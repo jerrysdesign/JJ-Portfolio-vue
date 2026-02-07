@@ -59,28 +59,36 @@ footer
     .row.profile
       p
         em.title
-          | Work
-        | I have over ten years of design experience with a solid foundation in graphic design, while also taking on the role of a frontend engineer. I am familiar with the design and development workflows and management, allowing me to provide the best and most suitable design solutions considering the overall team status.
+          | {{ $t('footer.profile.work.title') }}
+        | {{ $t('footer.profile.work.content') }}
       p
         em.title
-          | Skills
-        | Possess strong abstract, logical, and analytical thinking skills. Specialized in translating visual elements and behavioral interactions into systematic design specifications.
+          | {{ $t('footer.profile.skills.title') }}
+        | {{ $t('footer.profile.skills.content') }}
+        
       p
         em.title
-          | Differentiation
-        | I am actively looking for opportunities to stand on the world stage, dedicated to truly touching users' hearts through experience and expertise.
+          | {{ $t('footer.profile.differentiation.title') }}
+        | {{ $t('footer.profile.differentiation.content') }}
       p
-        em.title Interests
-        | I compose electronic music, skateboard, play drums, enjoy spatial design, and have a passion for street fashion and "creating things".
+        em.title
+          | {{ $t('footer.profile.interests.title') }}
+        | {{ $t('footer.profile.interests.content') }}
       p
-        em.title Philosophy
-        | I advocate for the Agile spirit, validating everything through User Stories.
+        em.title
+          | {{ $t('footer.profile.philosophy.title') }}
+        | {{ $t('footer.profile.philosophy.content') }}
+
       p
-        em.title Teamwork
-        | I’m a team player; my best work was done together with great people and companies.
+        em.title
+          | {{ $t('footer.profile.teamwork.title') }}
+        | {{ $t('footer.profile.teamwork.content') }}
+
       p
-        em.title Management Philosophy
-        | I have experience leading design and development teams, but I prefer a culture that prioritizes shared interests over reliance on management. I believe successful products stem from a spirit of innovation, a meticulous attitude, and constant refinement.
+        em.title
+          | {{ $t('footer.profile.management.title') }}
+        | {{ $t('footer.profile.management.content') }}
+
 </template>
 
 <style lang="scss" scoped>

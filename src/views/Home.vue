@@ -2,13 +2,13 @@
 main#home
   hero
   card#lawyerbc.light
-    h3(slot='cardTitle') 法務部律師查詢系統
+    h3(slot='cardTitle') {{ $t('home.lawyerbc.title') }}
     div(slot='cardContent')
       p
         span 2019
-        | 法務部律師查詢系統, 利用區塊鏈資料不可串改的特性, 將律師資料上鏈, 確保使用者查詢的結果的可信度
+        | {{ $t('home.lawyerbc.description') }}
       .buttons
-        btn(link='https://lawyerbc.moj.gov.tw/', label='Get 法務部律師查詢系統')
+        btn(link='https://lawyerbc.moj.gov.tw/', :label="$t('home.lawyerbc.btn')")
     ul(slot='cardList')
       li(v-for='item in lawyerbc')
         h4
@@ -17,14 +17,14 @@ main#home
       figure.item.desktop
         img(src='@/assets/images/lawyerbc/lawyerbc.png', alt='Collection View', width='1024', height='768')
   card#onlyPerps.dark
-    h3(slot='cardTitle') onlyPerps
+    h3(slot='cardTitle') {{ $t('home.onlyPerps.title') }}
     div(slot='cardContent')
       p
         span 2024
-        | 流動性資產交易平台。
+        | {{ $t('home.onlyPerps.description') }}
       .buttons
-        btn(link='https://www.onlyperps.com', label='Get onlyperps')
-        btn(link='https://app.onlyperps.com/#/trade', label='Get onlyperps App')
+        btn(link='https://www.onlyperps.com', :label="$t('home.onlyPerps.btn')")
+        btn(link='https://app.onlyperps.com/#/trade', :label="$t('home.onlyPerps.appBtn')")
     ul(slot='cardList')
       li(v-for='item in onlyPerps')
         h4
@@ -50,11 +50,11 @@ main#home
         img(src='@/assets/images/only_perps/trad-s-03.png', alt='app', width='375', height='768')
 
   card#goPacket.light
-    h3(slot='cardTitle') goPacket
+    h3(slot='cardTitle') {{ $t('home.goPacket.title') }}
     div(slot='cardContent')
       p
         span 2019 - 2020
-        | goPacket are an mobile & web app for most accurate, automated, user-friendly application for tracking, managing, and accounting purposes.
+        | {{ $t('home.goPacket.description') }}
     ul(slot='cardList')
       li(v-for='item in goPacket')
         h4
@@ -79,11 +79,11 @@ main#home
       figure.item.desktop
         img(src='@/assets/images/gopacket-web/a003.png', alt='Collection View', width='1024', height='1024')
   card#idHub.dark
-    h3(slot='cardTitle') ID Hub
+    h3(slot='cardTitle') {{ $t('home.idHub.title') }}
     div(slot='cardContent')
       p
         span 2018
-        | 數位網路身分不僅可以通過降低成本和擴大可能利益從事交易，而且採用的是可用於保護交易免受攻擊的現代密碼技術達到提高交易。尤其是後者，使實體參與，同時也是安全、私密的更有利的交易。
+        | {{ $t('home.idHub.description') }}
     ul(slot='cardList')
       li(v-for='item in idhub')
         h4
@@ -118,11 +118,11 @@ main#home
       figure.item.phone
         img(src='@/assets/images/idhub/screen-wallet-cryptocoin-send.png', alt='wallet-cryptocoin-send', width='375', height='768')
   card#goExplorer.light
-    h3(slot='cardTitle') goExplorer
+    h3(slot='cardTitle') {{ $t('home.goExplorer.title') }}
     div(slot='cardContent')
       p
         span 2019
-        | goExplorer 的地址為整合鏈上個是資產的人性化產品
+        | {{ $t('home.goExplorer.description') }}
     ul(slot='cardList')
       li(v-for='item in goExplorer')
         h4

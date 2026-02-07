@@ -1,0 +1,65 @@
+{
+    "nav": {
+        "title": "洪緯禎",
+        "subtitle": "我設計並構建數位產品、品牌和體驗。",
+        "getInTouch": "聯絡我"
+    },
+    "home": {
+        "lawyerbc": {
+            "title": "法務部律師查詢系統",
+            "description": "法務部律師查詢系統, 利用區塊鏈資料不可串改的特性, 將律師資料上鏈, 確保使用者查詢的結果的可信度",
+            "btn": "前往查詢系統"
+        },
+        "onlyPerps": {
+            "title": "onlyPerps",
+            "description": "流動性資產交易平台。",
+            "btn": "前往 onlyperps",
+            "appBtn": "前往 onlyperps App"
+        },
+        "goPacket": {
+            "title": "goPacket",
+            "description": "goPacket 是一個準確、自動化且友善的行動與網頁應用程式，用於追蹤、管理和會計目的。"
+        },
+        "idHub": {
+            "title": "ID Hub",
+            "description": "數位網路身分不僅可以通過降低成本和擴大可能利益從事交易，而且採用的是可用於保護交易免受攻擊的現代密碼技術達到提高交易。尤其是後者，使實體參與，同時也是安全、私密的更有利的交易。"
+        },
+        "goExplorer": {
+            "title": "goExplorer",
+            "description": "goExplorer 的地址為整合鏈上個是資產的人性化產品"
+        }
+    },
+    "footer": {
+        "credits": "Designed & Built by JJ Hung",
+        "profile": {
+            "work": {
+                "title": "工作相關",
+                "content": "我擁有十餘年的設計工作經驗，具備扎實的美術設計功底，同時身兼前端工程師的角色。我熟悉設計與開發的流程與管理，能夠考量團隊整體現況給予最佳、最合適的設計解決方案。"
+            },
+            "skills": {
+                "title": "技能",
+                "content": "具備較佳的抽象化、邏輯思考、分析歸納能力，擅長將視覺元素與行為操作轉化為系統化的設計規範。"
+            },
+            "differentiation": {
+                "title": "與眾不同",
+                "content": "我極力尋找可以站上世界舞台的機會，致力於透過經驗與體驗真正打動使用者的心。"
+            },
+            "interests": {
+                "title": "興趣",
+                "content": "我喜歡電子音樂、玩滑板、打爵士鼓，熱愛空間設計並對街頭時尚與「創建事物」充滿熱情。"
+            },
+            "philosophy": {
+                "title": "理念",
+                "content": "我崇尚敏捷精神，大小事都要以 User story 反覆驗證。"
+            },
+            "teamwork": {
+                "title": "團隊合作",
+                "content": "我是一個重視團隊合作的人，認為最好的作品是與優秀的人和公司共同完成的。"
+            },
+            "management": {
+                "title": "管理哲學",
+                "content": "我具備帶領設計與開發團隊的經驗，但更嚮往共同利益優先、不單純依賴管理的文化。我相信成功的產品離不開勇於創新的精神、一絲不苟的態度與精益求精的打磨。"
+            }
+        }
+    }
+}

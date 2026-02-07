@@ -1,14 +1,20 @@
 <template lang="pug">
 nav#navigationBar
-  h4 JJ Hung
-  p I design and build digital products, brands and experiences.
+  h4 {{ $t('nav.title') }}
+  p {{ $t('nav.subtitle') }}
   a.github(href="https://github.com/jerrysdesign", target="_blank", title="@jerrysdesign on Github")
     svg(width="24", height="24", viewBox="0 0 24 24", fill="none", xmlns="http://www.w3.org/2000/svg")
       path(d="M9 19C4.7 20.4 4.7 16.5 3 16M15 21V17.5C15 16.5 15.1 16.1 14.5 15.5C17.3 15.2 20 14.1 20 9.5C19.9988 8.30496 19.5325 7.15731 18.7 6.3C19.0905 5.26196 19.0545 4.11162 18.6 3.1C18.6 3.1 17.5 2.8 15.1 4.4C13.0672 3.87058 10.9328 3.87058 8.9 4.4C6.5 2.8 5.4 3.1 5.4 3.1C4.94548 4.11162 4.90953 5.26196 5.3 6.3C4.46745 7.15731 4.00122 8.30496 4 9.5C4 14.1 6.7 15.2 9.5 15.5C8.9 16.1 8.9 16.7 9 17.5V21", stroke="#6774E4", stroke-width="2", stroke-linecap="round", stroke-linejoin="round")
 
   a(href="mailto:jerry7722@hotmail.como", title="JJ's mailbox")
     h5
-      span.highlighter Get in touch
+      span.highlighter {{ $t('nav.getInTouch') }}
+  .lang-switch
+    a
+      span.highlighter(@click="setLang('zh-TW')", :class="{ active: $i18n.locale === 'zh-TW' }") 中文
+    span /
+    a
+      span.highlighter(@click="setLang('en')", :class="{ active: $i18n.locale === 'en' }") En
 </template>
 
 <script>
@@ -35,6 +41,9 @@ export default {
       })
       headroom.init(
       )
+    },
+    setLang (lang) {
+      this.$i18n.locale = lang
     }
   },
   components: {
@@ -46,6 +55,7 @@ export default {
 <style lang="scss" scoped>
 
 @use '@/assets/scss/_variables' as *;
+@use '@/assets/scss/_global' as *;
 
 nav {
   position: fixed;
@@ -77,13 +87,30 @@ p {
   align-items: center;
   justify-content: center;
 }
-#twitterPath {
-  fill: $link;
-}
+
 h5 {
   line-height: 54px;
   color: $link;
   margin: 0 0 0 1.5vw;
+}
+.lang-switch {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+  font: 1rem/54px $body;
+  color: $link;
+  a {
+    padding: 0 0.25rem;
+    cursor: pointer;
+    color: $link;
+    
+    &:hover {
+      font-weight: bold;
+    }
+    .active::after {
+      transform: scaleX(1);
+    }
+  }
 }
 nav .highlighter::after {
   top: 70%;
@@ -103,11 +130,6 @@ nav .highlighter::after {
   }
   h5 {
     font-size: 1rem;
-  }
-}
-@media (max-width: 320px) {
-  .twitter {
-    display: none;
   }
 }
 // HEADROOM

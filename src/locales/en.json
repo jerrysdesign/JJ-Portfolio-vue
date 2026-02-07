@@ -1,0 +1,65 @@
+{
+    "nav": {
+        "title": "JJ",
+        "subtitle": "I design and build digital products, brands and experiences.",
+        "getInTouch": "Get in touch"
+    },
+    "home": {
+        "lawyerbc": {
+            "title": "Ministry of Justice Lawyer Search System",
+            "description": "Ministry of Justice Lawyer Search System, using blockchain for immutable data to ensure the credibility of lawyer information.",
+            "btn": "Get System"
+        },
+        "onlyPerps": {
+            "title": "onlyPerps",
+            "description": "Liquidity asset trading platform.",
+            "btn": "Get onlyperps",
+            "appBtn": "Get onlyperps App"
+        },
+        "goPacket": {
+            "title": "goPacket",
+            "description": "goPacket are an mobile & web app for most accurate, automated, user-friendly application for tracking, managing, and accounting purposes."
+        },
+        "idHub": {
+            "title": "ID Hub",
+            "description": "Digital identity not only lowers costs and expands potential benefits for transactions but also employs modern cryptographic techniques to protect transactions from attacks. Especially the latter, enabling physical participation while ensuring safer, private, and more advantageous transactions."
+        },
+        "goExplorer": {
+            "title": "goExplorer",
+            "description": "goExplorer address integration for user-friendly assets on chain."
+        }
+    },
+    "footer": {
+        "credits": "Designed & Built by JJ Hung",
+        "profile": {
+            "work": {
+                "title": "Work",
+                "content": "I have over ten years of design experience with a solid foundation in graphic design, while also taking on the role of a frontend engineer. I am familiar with the design and development workflows and management, allowing me to provide the best and most suitable design solutions considering the overall team status."
+            },
+            "skills": {
+                "title": "Skills",
+                "content": "Possess strong abstract, logical, and analytical thinking skills. Specialized in translating visual elements and behavioral interactions into systematic design specifications."
+            },
+            "differentiation": {
+                "title": "Differentiation",
+                "content": "I am actively looking for opportunities to stand on the world stage, dedicated to truly touching users' hearts through experience and expertise."
+            },
+            "interests": {
+                "title": "Interests",
+                "content": "I compose electronic music, skateboard, play drums, enjoy spatial design, and have a passion for street fashion and 'creating things'."
+            },
+            "philosophy": {
+                "title": "Philosophy",
+                "content": "I advocate for the Agile spirit, validating everything through User Stories."
+            },
+            "teamwork": {
+                "title": "Teamwork",
+                "content": "I’m a team player; my best work was done together with great people and companies."
+            },
+            "management": {
+                "title": "Management",
+                "content": "I have experience leading design and development teams, but I prefer a culture that prioritizes shared interests over reliance on management. I believe successful products stem from a spirit of innovation, a meticulous attitude, and constant refinement."
+            }
+        }
+    }
+}
