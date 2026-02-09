@@ -10,6 +10,12 @@
             "description": "Ministry of Justice Lawyer Search System, using blockchain for immutable data to ensure the credibility of lawyer information.",
             "btn": "Get System"
         },
+        "yei": {
+            "title": "Yei Finance",
+            "description": "Cross-chain lending platform",
+            "btn": "Get yei",
+            "appBtn": "Get yei App"
+        },
         "onlyPerps": {
             "title": "onlyPerps",
             "description": "Liquidity asset trading platform.",

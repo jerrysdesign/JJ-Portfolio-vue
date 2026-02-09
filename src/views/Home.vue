@@ -1,14 +1,30 @@
 <template lang="pug">
 main#home
   hero
+  card#yei.dark
+    h3(slot='cardTitle') {{ $t('home.yei.title') }}
+    div(slot='cardContent')
+      p
+        span 2024
+        | {{ $t('home.yei.description') }}
+      .buttons
+        btn(link='https://www.yei.finance/', :label="$t('home.yei.btn')")
+        btn(link='https://app.yei.finance/', :label="$t('home.yei.appBtn')")
+    ul(slot='cardList')
+      li(v-for='item in yei')
+        h4
+          | {{ item }}
+    flickity.gallery(slot='cardGallery', ref='flickity', :options='flickityOptions')
+      figure.item.desktop
+        img(src='@/assets/images/yei/yei-01.png', alt='thumbnail', width='1024', height='768')
   card#goPacket.light
-    h3(slot='cardTitle') {{ $t('home.goPacket.title') }}
+    h3(slot='cardTitle') {{ $t('home.yei.title') }}
     div(slot='cardContent')
       p
         span 2019 - 2020
-        | {{ $t('home.goPacket.description') }}
+        | {{ $t('home.yei.description') }}
     ul(slot='cardList')
-      li(v-for='item in goPacket')
+      li(v-for='item in yei')
         h4
           | {{ item }}
     flickity.gallery(slot='cardGallery', ref='flickity', :options='flickityOptions')
@@ -166,6 +182,7 @@ export default {
     return {
       lawyerbc: ['Art Direction', 'Product Design', 'Prototyping', 'Dev'],
       onlyPerps: ['Art Direction', 'Branding', 'Product Design', 'Prototyping', 'Illustration', 'Icons', 'Dev'],
+      yei: ['Art Direction', 'Branding', 'Product Design', 'Prototyping', 'Illustration', 'Icons', 'Dev'],
       goPacket: ['Art Direction', 'Branding', 'Product Design', 'Prototyping', 'Illustration', 'Icons'],
       idhub: ['Art Direction', 'Branding', 'Product Design', 'Prototyping', 'Illustration', 'Icons'],
       goExplorer: ['Art Direction', 'Branding', 'Product Design', 'Prototyping', 'Illustration', 'Icons'],
@@ -197,6 +214,17 @@ ul {
     &:before {
       background-color: hsl(160, 88%, 90%);
       background-image: linear-gradient(340deg, hsl(195, 32%, 80%) 0%, hsl(165, 22%, 90%) 100%);
+    }
+  }
+  .item {
+    box-shadow: 0 15px 60px rgba(10, 60, 51, 0.5);
+  }
+}
+#yei{
+  .gallery {
+    &:before {
+      background-color: hsl(175, 80%, 50%);
+      background-image: linear-gradient(340deg, hsl(180, 82%, 5%) 0%, hsl(180, 92%, 30%) 100%);
     }
   }
   .item {

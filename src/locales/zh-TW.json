@@ -10,6 +10,12 @@
             "description": "法務部律師查詢系統, 利用區塊鏈資料不可串改的特性, 將律師資料上鏈, 確保使用者查詢的結果的可信度",
             "btn": "前往查詢系統"
         },
+        "yei": {
+            "title": "Yei Finance",
+            "description": "跨鏈借貸平台.",
+            "btn": "Get yei",
+            "appBtn": "Get yei App"
+        },
         "onlyPerps": {
             "title": "onlyPerps",
             "description": "流動性資產交易平台。",
