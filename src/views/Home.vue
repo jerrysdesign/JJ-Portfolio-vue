@@ -1,21 +1,35 @@
 <template lang="pug">
 main#home
   hero
-  card#lawyerbc.light
-    h3(slot='cardTitle') {{ $t('home.lawyerbc.title') }}
+  card#goPacket.light
+    h3(slot='cardTitle') {{ $t('home.goPacket.title') }}
     div(slot='cardContent')
       p
-        span 2019
-        | {{ $t('home.lawyerbc.description') }}
-      .buttons
-        btn(link='https://lawyerbc.moj.gov.tw/', :label="$t('home.lawyerbc.btn')")
+        span 2019 - 2020
+        | {{ $t('home.goPacket.description') }}
     ul(slot='cardList')
-      li(v-for='item in lawyerbc')
+      li(v-for='item in goPacket')
         h4
           | {{ item }}
     flickity.gallery(slot='cardGallery', ref='flickity', :options='flickityOptions')
+      figure.item.phone
+        img(src='@/assets/images/gopacket-mobile/a00.png', alt='Launch', width='375', height='812')
+      figure.item.phone
+        img(src='@/assets/images/gopacket-mobile/a01.png', alt='Discover', width='375', height='812')
+      figure.item.phone
+        img(src='@/assets/images/gopacket-mobile/a02.png', alt='Discover--Scroll', width='375', height='812')
+      figure.item.phone
+        img(src='@/assets/images/gopacket-mobile/a03.png', alt='Account', width='375', height='812')
+      figure.item.phone
+        img(src='@/assets/images/gopacket-mobile/a04.png', alt='Account--Scroll', width='375', height='812')
+      figure.item.phone
+        img(src='@/assets/images/gopacket-mobile/a06.png', alt='Assets', width='375', height='812')
+      figure.item.phone
+        img(src='@/assets/images/gopacket-mobile/a07.png', alt='Add-Account--wallet', width='375', height='812')
       figure.item.desktop
-        img(src='@/assets/images/lawyerbc/lawyerbc.png', alt='Collection View', width='1024', height='768')
+        img(src='@/assets/images/gopacket-web/a002.png', alt='Collection View', width='1024', height='1024')
+      figure.item.desktop
+        img(src='@/assets/images/gopacket-web/a003.png', alt='Collection View', width='1024', height='1024')
   card#onlyPerps.dark
     h3(slot='cardTitle') {{ $t('home.onlyPerps.title') }}
     div(slot='cardContent')
@@ -48,36 +62,33 @@ main#home
         img(src='@/assets/images/only_perps/trad-s-02.png', alt='app', width='375', height='768')
       figure.item.phone
         img(src='@/assets/images/only_perps/trad-s-03.png', alt='app', width='375', height='768')
-
-  card#goPacket.light
-    h3(slot='cardTitle') {{ $t('home.goPacket.title') }}
+  card#lawyerbc.light
+    h3(slot='cardTitle') {{ $t('home.lawyerbc.title') }}
     div(slot='cardContent')
       p
-        span 2019 - 2020
-        | {{ $t('home.goPacket.description') }}
+        span 2019
+        | {{ $t('home.lawyerbc.description') }}
+      .buttons
+        btn(link='https://lawyerbc.moj.gov.tw/', :label="$t('home.lawyerbc.btn')")
     ul(slot='cardList')
-      li(v-for='item in goPacket')
+      li(v-for='item in lawyerbc')
         h4
           | {{ item }}
     flickity.gallery(slot='cardGallery', ref='flickity', :options='flickityOptions')
-      figure.item.phone
-        img(src='@/assets/images/gopacket-mobile/a00.png', alt='Launch', width='375', height='812')
-      figure.item.phone
-        img(src='@/assets/images/gopacket-mobile/a01.png', alt='Discover', width='375', height='812')
-      figure.item.phone
-        img(src='@/assets/images/gopacket-mobile/a02.png', alt='Discover--Scroll', width='375', height='812')
-      figure.item.phone
-        img(src='@/assets/images/gopacket-mobile/a03.png', alt='Account', width='375', height='812')
-      figure.item.phone
-        img(src='@/assets/images/gopacket-mobile/a04.png', alt='Account--Scroll', width='375', height='812')
-      figure.item.phone
-        img(src='@/assets/images/gopacket-mobile/a06.png', alt='Assets', width='375', height='812')
-      figure.item.phone
-        img(src='@/assets/images/gopacket-mobile/a07.png', alt='Add-Account--wallet', width='375', height='812')
       figure.item.desktop
-        img(src='@/assets/images/gopacket-web/a002.png', alt='Collection View', width='1024', height='1024')
+        img(src='@/assets/images/lawyerbc/lawer-01.png', alt='Collection View', width='1024', height='768')
       figure.item.desktop
-        img(src='@/assets/images/gopacket-web/a003.png', alt='Collection View', width='1024', height='1024')
+        img(src='@/assets/images/lawyerbc/lawer-02.png', alt='Collection View', width='1024', height='768')
+      figure.item.desktop
+        img(src='@/assets/images/lawyerbc/lawer-03.png', alt='Collection View', width='1024', height='768')
+      figure.item.desktop
+        img(src='@/assets/images/lawyerbc/lawer-04.png', alt='Collection View', width='1024', height='768')
+      figure.item.desktop
+        img(src='@/assets/images/lawyerbc/lawer-05.png', alt='Collection View', width='1024', height='768')
+      figure.item.desktop
+        img(src='@/assets/images/lawyerbc/lawer-06.png', alt='Collection View', width='1024', height='768')
+      figure.item.desktop
+        img(src='@/assets/images/lawyerbc/lawer-07.png', alt='Collection View', width='1024', height='768')
   card#idHub.dark
     h3(slot='cardTitle') {{ $t('home.idHub.title') }}
     div(slot='cardContent')
