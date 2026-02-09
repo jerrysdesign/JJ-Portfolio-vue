@@ -221,6 +221,9 @@ ul {
   }
 }
 #yei{
+  h3, p {
+    color: #F0F0F0;
+  }
   .gallery {
     &:before {
       background-color: hsl(175, 80%, 50%);
