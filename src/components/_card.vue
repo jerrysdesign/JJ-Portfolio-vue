@@ -32,6 +32,9 @@ section {
   .dot::before {}
 }
 .dark {
+  h3, p {
+    color: #F0F0F0;
+  }
   &::before {
     background: linear-gradient(130deg, hsl(180,5%,12%), hsl(180,5%,2%));
   }

@@ -18,13 +18,13 @@ main#home
       figure.item.desktop
         img(src='@/assets/images/yei/yei-01.png', alt='thumbnail', width='1024', height='768')
   card#goPacket.light
-    h3(slot='cardTitle') {{ $t('home.yei.title') }}
+    h3(slot='cardTitle') {{ $t('home.goPacket.title') }}
     div(slot='cardContent')
       p
         span 2019 - 2020
-        | {{ $t('home.yei.description') }}
+        | {{ $t('home.goPacket.description') }}
     ul(slot='cardList')
-      li(v-for='item in yei')
+      li(v-for='item in goPacket')
         h4
           | {{ item }}
     flickity.gallery(slot='cardGallery', ref='flickity', :options='flickityOptions')
@@ -221,9 +221,6 @@ ul {
   }
 }
 #yei{
-  h3, p {
-    color: #F0F0F0;
-  }
   .gallery {
     &:before {
       background-color: hsl(175, 80%, 50%);
@@ -235,9 +232,6 @@ ul {
   }
 }
 #onlyPerps{
-  h3, p {
-    color: #F0F0F0;
-  }
   .gallery {
     &:before {
       background-color: hsl(294, 100%, 75%);
@@ -260,9 +254,6 @@ ul {
   }
 }
 #idHub {
-  h3, p {
-    color: #F0F0F0;
-  }
  .gallery {
     &:before {
       background-color: hsl(220,75%,30%);
